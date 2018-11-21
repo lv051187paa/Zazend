@@ -1,0 +1,87 @@
+@import "./vars.scss";
+
+.single {
+  max-width: $container_width_xl;
+  margin: 15px auto 0;
+  padding-bottom: $body_padding_bottom + $header_height;
+  &__image {
+    & img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__author {
+    text-align: center;
+
+    & span {
+      text-decoration: underline;
+    }
+  }
+
+  &__body {
+    margin-top: 40px;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__text {
+    color: $bodytext_color;
+  }
+
+  &__comments {
+    margin-top: 30px;
+
+    &-header {
+      font-weight: 600;
+      position: relative;
+      text-align: center;
+      text-transform: uppercase;
+
+      &:after {
+        content: "";
+        height: 2px;
+        width: 100%;
+        top: -5px;
+        position: absolute;
+        left: 0;
+        background-color: #000;
+      }
+
+      &:before {
+        content: "";
+        height: 2px;
+        width: 100%;
+        bottom: -5px;
+        position: absolute;
+        left: 0;
+        background-color: #000;
+      }
+    }
+  }
+}
+
+
+@media screen and(max-width: 1200px){
+  .single{
+      max-width: $container_width_lg;
+  }
+}
+
+@media screen and(max-width: 1000px){
+  .single{
+      max-width: $container_width_md;
+  }
+}
+
+
+@media screen and(max-width: 800px){
+  .single{
+      
+    &__body, &__comments{
+      padding: 0 10px;
+    }
+  }
+}

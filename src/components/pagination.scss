@@ -1,0 +1,11 @@
+.paginator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & i{
+        margin: 0 10px;
+        cursor: pointer;
+        font-size: 20px;
+    }
+}

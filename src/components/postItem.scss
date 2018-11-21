@@ -1,0 +1,37 @@
+@import './vars.scss';
+
+.post {
+  height: 400px;
+  width: 300px;
+  margin: 25px 10px;
+  background: #fff;
+  transition: 0.6s;
+  border-radius: 5px;
+  overflow: hidden;
+
+  &:hover {
+    transition: 0.6s;
+    -webkit-box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.75);
+  }
+
+  &__text {
+    padding: 5px 10px;
+  }
+
+  &__title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+
+    & span {
+      cursor: pointer;
+    }
+  }
+
+  &__body {
+    color: $bodytext_color;
+    font-size: 14px;
+  }
+}

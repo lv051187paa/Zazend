@@ -1,0 +1,22 @@
+@import './vars.scss';
+
+.list{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: $container_width_xl;
+    margin: 0 auto;
+}
+
+@media screen and(max-width: 1200px){
+    .list{
+        max-width: $container_width_lg;
+    }
+}
+
+@media screen and(max-width: 1000px){
+    .list{
+        max-width: $container_width_md;
+    }
+}
